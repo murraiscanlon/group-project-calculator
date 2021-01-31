@@ -13,10 +13,7 @@
 <!--          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">-->
 <!--</GridPane>-->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
-            fx:controller="sample.Controller"
-            xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <top>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -88,13 +85,13 @@
         </rowConstraints>
          <children>
             <Label text="Group Number" />
-            <TextField GridPane.columnIndex="1" />
+            <TextField fx:id="group_number_textfield" GridPane.columnIndex="1" />
             <Label text="Product Grade" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="product_grade_textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Participation Grade" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="participation_grade_textfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label text="Submission Grade" GridPane.rowIndex="3" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="submission_grade_textfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
          <BorderPane.margin>
             <Insets right="10.0" />
@@ -105,7 +102,7 @@
       </GridPane>
    </center>
    <left>
-      <Label alignment="TOP_CENTER" prefHeight="288.0" prefWidth="139.0" text="Average:" BorderPane.alignment="TOP_CENTER">
+      <Label fx:id="average_label" alignment="TOP_CENTER" prefHeight="288.0" prefWidth="139.0" text="Average:" BorderPane.alignment="TOP_CENTER">
          <BorderPane.margin>
             <Insets top="10.0" />
          </BorderPane.margin>
@@ -126,7 +123,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="calculate_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#calculate_grade_on_mouse_click" text="Calculate" />
+            <Button fx:id="calculate_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#calculate_grade_on_mouse_click" text="Calculate" />
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Clear" GridPane.rowIndex="1" />
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Clear All" GridPane.rowIndex="2" />
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Save" GridPane.rowIndex="3" />
