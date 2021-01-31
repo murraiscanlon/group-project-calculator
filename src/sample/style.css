@@ -1,0 +1,8 @@
+.average_output{
+    -fx-border-style: solid;
+    -fx-border-color: gray;
+    -fx-border-radius: 10px;
+    -fx-text-fill: gray;
+    -fx-font-family: "Arial Black";
+
+}
