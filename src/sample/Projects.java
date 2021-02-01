@@ -1,5 +1,9 @@
 package sample;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Projects {
     String projectName;
     String className;
@@ -9,6 +13,7 @@ public class Projects {
     String participationGrade;
     String submissionGrade;
     double finalGrade;
+    Map<String, ArrayList<String>> groups = new HashMap<>();
 
 
 

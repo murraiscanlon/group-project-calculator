@@ -13,17 +13,20 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.concurrent.TimeUnit;
 
 import static java.lang.System.currentTimeMillis;
 
 
 public class Controller {
 
+
+
     SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy [hh:mm]");
     Date date = new Date();
     double finalAverage;
-    Projects projects = new Projects();
-    //FileWriter myWriter;
+    Projects drivebaseGTE = new Projects();
+
 
 
 
@@ -74,9 +77,11 @@ public class Controller {
 
     public void clear(ActionEvent event){
         group_number_textfield.clear();
-        projectname_textfield.clear();
-        classname_textfield.clear();
-        section_textfield.clear();
+        product_grade_textfield.clear();
+        participation_grade_textfield.clear();
+        submission_grade_textfield.clear();
+        average_label_output.setText("");
+
     }
 
     public void clear_all(ActionEvent event){
@@ -88,44 +93,68 @@ public class Controller {
         participation_grade_textfield.clear();
         submission_grade_textfield.clear();
         average_label_output.setText("");
+        display_label.setText("");
     }
 
-    public void save(){
-
-        //Confirmation Message
-        display_label.setText("Successfully Saved   ------   " + sdf.format(date.getTime()));
+    public void save() throws InterruptedException {
 
         //Add textfields data to Objects/class - - - print later
-        projects.setGroupNumber(group_number_textfield.getText());
-        projects.setProductGrade(product_grade_textfield.getText());
-        projects.setParticipationGrade(participation_grade_textfield.getText());
-        projects.setSubmissionGrade(submission_grade_textfield.getText());
-        projects.setFinalGrade(finalAverage);
+        if (drivebaseGTE.projectName == null){
+            drivebaseGTE.setProjectName(projectname_textfield.getText());
+            drivebaseGTE.setClassName(classname_textfield.getText());
+            drivebaseGTE.setSection(section_textfield.getText());
+        }
+
+            drivebaseGTE.groups.put(group_number_textfield.getText(), new ArrayList<String>());
+            drivebaseGTE.groups.get(group_number_textfield.getText()).add(product_grade_textfield.getText());
+            drivebaseGTE.groups.get(group_number_textfield.getText()).add(participation_grade_textfield.getText());
+            drivebaseGTE.groups.get(group_number_textfield.getText()).add(submission_grade_textfield.getText());
+            drivebaseGTE.groups.get(group_number_textfield.getText()).add(String.valueOf(finalAverage));
+
+        //Confirmation Message
+        display_label.setText("Successfully Saved: Group: " + group_number_textfield.getText() + "   ---   " + sdf.format(date.getTime()));
+    }
+
+    public void print() throws InterruptedException {
+        //Create a new file
+        try {
+
+            FileWriter myWriter = new FileWriter("C:/Users/Murrai.Scanlon/Desktop/project_grades/"
+                    + projectname_textfield.getText() + "_"
+                    + classname_textfield.getText() + "_"
+                    + section_textfield.getText() + ".txt");
+            myWriter.write("\n" + sdf.format(date.getTime()) + "\n");
+            myWriter.write("\n");
+
+            //Add the header data
+            myWriter.write("Project Name: " + drivebaseGTE.projectName+ "\n");
+            myWriter.write("Class: " + drivebaseGTE.className + "\n");
+            myWriter.write("Section: " + drivebaseGTE.section + "\n");
+            myWriter.write("==================================\n");
+
+            //Add group details
+            for (String key :  drivebaseGTE.groups.keySet()){
+                myWriter.write("\nGroup Number_" + key
+                                + "\nAverage: " + drivebaseGTE.groups.get(key).get(3)+ "\n"
+                                + "\n\tProduct Grade: " + drivebaseGTE.groups.get(key).get(0)+ "\n"
+                                + "\tParticipation Grade: " + drivebaseGTE.groups.get(key).get(1)+ "\n"
+                                + "\tSubmission Grade: " + drivebaseGTE.groups.get(key).get(2)+ "\n");
+                myWriter.write("--------------------------------\n");
+            }
+            myWriter.close();
+            System.out.println("--------------------");
+            System.out.println("\nYour file has been successfully written!\n");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        display_label.setText("Successfully Printed: " + projectname_textfield.getText()
+                                + "_" + classname_textfield.getText()
+                                + "_" + section_textfield.getText() + "   ---   " + sdf.format(date.getTime()));
+
+
     }
 
 }
 
-/*
-        //Write to File
-        try {
-
-                //if (myWriter == null) {
-                FileWriter myWriter = new FileWriter("C:/Users/Murrai.Scanlon/Desktop/project_grades/"
-                + projectname_textfield.getText() + "_"
-                + classname_textfield.getText() + "_"
-                + section_textfield.getText() + ".txt");
-                myWriter.write("\n" + sdf.format(date.getTime()) + "\n");
-                myWriter.write("\n");
-                //}
-
-                for (int i = 0; i < listOfGrades.size(); i++){
-        myWriter.write(listOfGrades.get(i));
-        }
-        myWriter.close();
-        System.out.println("--------------------");
-        System.out.println("\nYour file has been successfully written!\n");
-        } catch (IOException e) {
-        System.out.println("An error occurred.");
-        e.printStackTrace();
-        }
- */

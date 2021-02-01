@@ -6,3 +6,7 @@
     -fx-font-family: "Arial Black";
 
 }
+
+.buttons{
+    -fx-background-color: blue;
+}
