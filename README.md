@@ -14,7 +14,7 @@ This application calculates currently calculates grades entered by the user and 
 * Input validation and error handling
 
 ## :sparkles: APPLICATION FEATURES:
-- [X] Saves group and grade data 
+- [X] Saves group and grade data
 - [X] Writes group data to .txt file
 - [ ] Look up previous data
 - [ ] Modify previous data
@@ -23,3 +23,8 @@ This application calculates currently calculates grades entered by the user and 
 
 ## SCREENSHOTS:
 ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/app_screen_shot.png)
+
+
+![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/file_output.png)
+
+
