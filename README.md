@@ -11,7 +11,7 @@ Group projects in my class are always broken down into three different weighted 
 This application calculates currently calculates grades entered by the user and stores them in a .txt file.<br /><br /><br />
 
 
-## :exclamation: IMPORVEMENTS NEEDED:
+## :exclamation: IMPROVEMENTS NEEDED:
 * Create destination file if it doesn't already exist
 * Input validation and error handling<br /><br /><br />
 
