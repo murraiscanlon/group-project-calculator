@@ -22,4 +22,4 @@ This application calculates currently calculates grades entered by the user and 
 
 
 ## SCREENSHOTS:
-![Alt text](C:\Users\Murrai.Scanlon\IdeaProjects\group-project-calculator\app_screen_shot.png?raw=true "Title")
+![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/app_screen_shot.png)
