@@ -1,4 +1,4 @@
-# Group Project Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)<br />
+# Group Project Grade Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)<br />
 
 
 
@@ -30,9 +30,6 @@ This application calculates grades entered by the user and stores them in a .txt
 
 ## SCREENSHOTS:
 ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/app_screen_shot.png)<br /><br /><br />
-
-
-
 
 ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/file_output.png)<br /><br /><br />
 
