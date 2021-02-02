@@ -1,4 +1,4 @@
-# Group Project Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)<br /><br /><br />
+# Group Project Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)<br />
 
 
 
