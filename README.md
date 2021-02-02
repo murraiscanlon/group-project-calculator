@@ -22,9 +22,16 @@ This application calculates currently calculates grades entered by the user and 
 - [ ] Modify previous data
 - [ ] Store student names with their group data
 
+## TECHNOLOGIES: ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/technologies.png)
+* Java
+* JavaFX
+* CSS, FXML
+
 
 ## SCREENSHOTS:
-![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/app_screen_shot.png)
+![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/app_screen_shot.png)<br /><br />
+
+
 
 
 ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/file_output.png)
