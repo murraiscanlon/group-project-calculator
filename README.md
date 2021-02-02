@@ -1,4 +1,5 @@
-# Group Project Calculator
+# Group Project Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)
+
 
 ## PURPOSE:
 Group projects in my class are always broken down into three different weighted categories:
