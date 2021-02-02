@@ -25,7 +25,7 @@ This application calculates currently calculates grades entered by the user and 
 ## TECHNOLOGIES: ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/technologies.png)
 * Java
 * JavaFX
-* CSS, FXML<br /><br /><br />
+* CSS <br /><br /><br />
 
 
 ## SCREENSHOTS:
