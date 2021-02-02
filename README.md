@@ -3,7 +3,7 @@
 
 
 ##  PURPOSE: ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/light-bulb32.png)
-Group projects in my class are always broken down into three different weighted categories:
+Group projects in my class are always broken down into three different weighted grade categories:
 * Product - 45%
 * Participation - 45%
 * Submission guidelines - %10
@@ -16,11 +16,12 @@ This application calculates grades entered by the user and stores them in a .txt
 * Input validation and error handling<br /><br /><br />
 
 ## :sparkles: APPLICATION FEATURES:
-- [X] Saves group and grade data
+- [X] Calculates grades based on weights
 - [X] Writes group data to .txt file
+- [ ] Write group data to .xlxs file
+- [ ] Load previous files to make madifications:
 - [ ] Look up previous data
-- [ ] Modify previous data
-- [ ] Store student names with their group data<br /><br /><br />
+- [ ] Modify previous data<br /><br /><br />
 
 ## TECHNOLOGIES: ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/technologies.png)
 * Java
