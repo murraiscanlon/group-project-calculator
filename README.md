@@ -1,7 +1,8 @@
 # Group Project Calculator ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/discount.png)
 
 
-## PURPOSE:
+
+##  PURPOSE: ![img of application](https://github.com/murraiscanlon/group-project-calculator/blob/master/light-bulb.png)
 Group projects in my class are always broken down into three different weighted categories:
 * Product - 45%
 * Participation - 45%
