@@ -1,21 +1,16 @@
-package sample;
+package app;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.concurrent.TimeUnit;
-
-import static java.lang.System.currentTimeMillis;
 
 
 public class Controller {
@@ -117,6 +112,7 @@ public class Controller {
 
     public void print() throws InterruptedException {
         //Create a new file
+
         try {
 
             FileWriter myWriter = new FileWriter("C:/Users/Murrai.Scanlon/Desktop/project_grades/"

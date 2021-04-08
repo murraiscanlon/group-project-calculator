@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<!--<GridPane fx:controller="sample.Controller"-->
+<!--<GridPane fx:controller="app.Controller"-->
 <!--          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">-->
 <!--</GridPane>-->
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
    <top>
       <GridPane prefHeight="106.0" prefWidth="576.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -182,7 +182,7 @@
       </GridPane>
    </right>
    <bottom>
-      <Label fx:id="display_label" maxWidth="-Infinity" prefHeight="32.0" prefWidth="621.0" snapToPixel="false" style="-fx-background-color: #92817a; -fx-border-radius: 10px; -fx-background-radius: 5px; -fx-text-fill: #222831;" BorderPane.alignment="TOP_LEFT">
+      <Label fx:id="display_label" maxWidth="-Infinity" prefHeight="32.0" prefWidth="621.0" snapToPixel="false" style="-fx-background-color: #f4f9f9; -fx-border-radius: 10px; -fx-background-radius: 5px; -fx-text-fill: #222831;" BorderPane.alignment="TOP_LEFT">
          <BorderPane.margin>
             <Insets bottom="10.0" left="10.0" />
          </BorderPane.margin>
